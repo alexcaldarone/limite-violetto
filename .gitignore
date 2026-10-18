@@ -9,3 +9,4 @@ build/
 dist/
 outputs/
 .hub-staging/
+/MLX_PLAN.md

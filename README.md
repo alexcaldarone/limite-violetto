@@ -171,6 +171,18 @@ Selected models and mathematical benchmarks. Scores are percentages.
 
 Violetto is built around mathematical reasoning, with deliberately light instruction tuning and a focus on solving one problem at a time. The [release blog](https://paradigma.inc/blog/limite-1b-violetto/) includes worked solutions and examples of how this specialization shapes its responses.
 
+## Apple Silicon
+
+The independent [`limite-mlx/`](limite-mlx/) package implements Limite in MLX
+and loads the original checkpoint directly:
+
+```bash
+uv run --project limite-mlx --locked limite-generate --prompt "Solve 2x + 3 = 11."
+```
+
+The [evaluation package](limite-evals/README.md) supports direct MLX generation
+through `--backend mlx` with its optional `mlx` dependency.
+
 ## Plugin development
 
 ```bash
